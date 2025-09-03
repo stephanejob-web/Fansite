@@ -1,12 +1,96 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/src/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="flex flex-col h-screen">
+  <!-- Navbar -->
+  <div class="text-[17px] px-[180px] py-[24px] bg-white flex justify-between items-center">
+    <!-- Logo -->
+    <div>
+      <h1 class="text-[36px] font-semibold">
+        Linus torvald <span class="text-[#C8815F]">.</span>
+      </h1>
+    </div>
+    <!-- Navigation -->
+    <div>
+      <ul class="flex gap-[32px]">
+        <li class="cursor-pointer">Home</li>
+        <li class="cursor-pointer">Biographie</li>
+        <li class="cursor-pointer">Projects</li>
+      </ul>
+    </div>
+    <!-- Icons -->
+    <div class="flex gap-[24px]">
+      <i class="fas fa-search text-[24px] cursor-pointer"></i>
+      <i class="fas fa-user text-[24px] cursor-pointer"></i>
+      <i class="far fa-heart text-[24px] cursor-pointer"></i>
+      <i class="fas fa-shopping-bag text-[24px] cursor-pointer"></i>
+    </div>
+
+  </div>
+
+  <!-- Hero Section -->
+  <div class=" flex-1">
+    <div
+      class=" h-full bg-[url('https://ideas.ted.com/wp-content/uploads/sites/3/2016/04/featured_torvalds_linux_ted_31.jpg?resize=750,450')] bg-cover bg-center bg-no-repeat flex items-center text-white pl-[137px]">
+      <div class="flex flex-col">
+        <div class="text-[34px] leading-8">Linus</div>
+        <div class="text-[56px] font-medium mb-4">Benedict Torvalds</div>
+        <p class="w-[397px] mb-[40px]">
+  Il est connu pour avoir créé en 1991 le noyau Linux dont il continue à diriger le développement. Il en est considéré comme le « dictateur bienveillant ».
+        </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+<h1 class="text-3xl text-center">Ses projets </h1>
+<!-- SES PROJETS -->
+<ul class="grid grid-cols-1 xl:grid-cols-3 gap-y-10 gap-x-6 items-start p-8">
+    <li class="relative flex flex-col sm:flex-row xl:flex-col items-start">
+        <div class="order-1 sm:ml-6 xl:ml-0 ">
+            <h3 class="mb-1 text-slate-900 font-semibold">
+                <span class="mb-1 block text-sm leading-6 text-indigo-500">LINUX
+            <div class="prose prose-slate prose-sm text-slate-600">
+                <p>Completely unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind
+                    CSS.</p>
+            </div><a
+                class="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 mt-6"
+                href="">Voir le projet sur github<span class="sr-only">, Completely unstyled, fully accessible UI components</span>
+                <svg class="overflow-visible ml-3 text-slate-300 group-hover:text-slate-400"
+                    width="3" height="6" viewBox="0 0 3 6" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M0 0L3 3L0 6"></path>
+                </svg></a>
+        </div>
+        <img src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2022/02/tux_upclose_hero_1.jpg" alt="" class="mb-6 shadow-md rounded-lg bg-slate-50 w-full sm:w-[17rem] sm:mb-0 xl:mb-6 xl:w-full" width="1216" height="640">
+    </li>
+    <li class="relative flex flex-col sm:flex-row xl:flex-col items-start">
+        <div class="order-1 sm:ml-6 xl:ml-0">
+            <h3 class="mb-1 text-slate-900 font-semibold">
+                <span class="mb-1 block text-sm leading-6 text-purple-500">GIT
+            </h3>
+            <div class="prose prose-slate prose-sm text-slate-600">
+                <p>A set of 450+ free MIT-licensed SVG icons. Available as basic SVG icons and via first-party React and
+                    Vue libraries.</p>
+            </div><a
+                class="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 mt-6"
+                href="">Voir le projet sur github<span class="sr-only">, Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS.</span>
+                <svg class="overflow-visible ml-3 text-slate-300 group-hover:text-slate-400"
+                    width="3" height="6" viewBox="0 0 3 6" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M0 0L3 3L0 6"></path>
+                </svg></a>
+        </div>
+        <img src="https://cdn.prod.website-files.com/6362971088d00b6db818deb3/645ca36ec99610813cdc5584_COUV_ARTICLE_DEVU_RECTANGLE-46-p-1080.png" alt="" class="mb-6 shadow-md rounded-lg bg-slate-50 w-full sm:w-[17rem] sm:mb-0 xl:mb-6 xl:w-full" width="1216" height="640">
+    </li>
+   
+</ul>
+</body>
 </html>
