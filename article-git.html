@@ -3,62 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
     <title>Document</title>
 </head>
-<body >
+<body>
 
-    <div class="m-40">
-        <h1 class="text-6xl text-gray-700 text-center m-10">Je voulais juste régler mon problème" : il y a 20 ans, Linus Torvalds créait Git</h1>
 
-    <p class="mb-4 mt-0 text-base font-light leading-8 ">
-git origin
+<div class="p-10">
 
-C’est en avril 2005, suite à un différend sur les licences du logiciel propriétaire BitKeeper (aujourd'hui abandonné) utilisé par les développeurs du noyau Linux, que Linus Torvalds décide de créer Git.
-
-</p>
-    <p class="mb-4 mt-0 text-base font-light leading-8 ">
-À l'origine, BitKeeper, bien que performant, était mal accepté par la communauté open source en raison de sa nature propriétaire, malgré une utilisation gratuite tolérée pour les projets libres.
-
-Une tentative de reverse engineering par Andrew Tridgell, l'un des développeurs du noyau Linux, avait à l'époque aggravé la situation, poussant Torvalds à anticiper une alternative open source plus viable.
-
-"Je voulais quelque chose qui me convenait, sans me soucier vraiment des autres en premier lieu", confie-t-il.
-
-En seulement dix jours, Torvalds développe une version suffisamment fonctionnelle pour être utilisée immédiatement dans le développement du noyau Linux. Toutefois, cette rapidité apparente cache un travail préparatoire de plusieurs mois de réflexion, débuté dès novembre ou décembre 2004.
-
-Le 8 avril 2005, Linus Torvalds réalise le tout premier commit de ce nouvel outil de gestion de version baptisé Git — un commit historique, réalisé avec Git lui-même !
-
-</p>
-<p class="mb-4 mt-0 text-base font-light leading-8 ">
-    Git, l'incompris devenu incontournable
-
-Dès le départ, Git a marqué une rupture grâce à sa conception décentralisée, une véritable révolution pour l'époque.
-
-Deux principes clés ont guidé son développement : la rapidité, essentielle pour appliquer efficacement un grand nombre de modifications, et l’utilisation généralisée d’un système de hachage (SHA-1), non pas tant pour la sécurité, mais pour détecter toute corruption de fichiers, un problème que Torvalds avait déjà rencontré avec BitKeeper.
-
-Git a été conçu avec une philosophie semblable à celle d’Unix ("tout est un fichier, tout est un processus"), rendant ses concepts fondamentaux simples et faciles à expliquer, malgré la complexité sous-jacente.
-
-Bien que rapidement adopté par les développeurs du noyau Linux, Git n'a pas immédiatement conquis tout le monde.
-
-Torvalds se souvient d’ailleurs des critiques initiales : "Beaucoup trouvaient Git difficile à prendre en main et contre-intuitif". Cependant, au fil des ans, une véritable bascule s’est opérée.
-
-Vers 2008, l'arrivée d'une nouvelle génération de développeurs, notamment dans la communauté web avec des projets comme Ruby on Rails, a permis une adoption massive de Git et a modifié positivement la perception de l'outil.
-Un créateur fidèle à ses outils
-
-Sur son usage personnel, Torvalds affirme être resté fidèle à ses habitudes minimalistes, n’utilisant encore aujourd'hui que cinq commandes : git merge, git blame, git log, git commit et git pull.
-
-Il ajoute qu'il continue à travailler exclusivement en ligne de commande, sans intégration d’éditeur sophistiqué, fidèle à son éditeur favori depuis l'université, MicroEMACS. "Chaque fois que j’essaie un éditeur moderne, je réalise que mes mains sont trop vieilles pour changer".
-</p>
-<p class="mb-4 mt-0 text-base font-light leading-8 ">
-  Torvalds indique n’avoir également jamais vraiment utilisé d’outils tiers ou d’intégrations avancées pour Git, mis à part gitk, un visualiseur graphique intégré très tôt au projet.
-
-Interrogé sur les évolutions souhaitées pour Git, Torvalds évoque principalement le souhait d’une meilleure unification des systèmes de suivi des bugs et "issues", actuellement très fragmentés selon les plateformes.
-
-Malgré quelques regrets mineurs sur des décisions initiales, comme l'utilisation de SHA-1 — qui a entraîné beaucoup d'efforts supplémentaires lorsqu'il a fallu intégrer un support pour SHA-256 —, il reste globalement satisfait des choix fondamentaux qui ont assuré la robustesse et l’efficacité de Git.
-
-Lorsqu'on lui demande quel futur projet majeur pourrait suivre Linux et Git, Torvalds reste modeste et pragmatique : "chaque projet que j’ai créé est né d’un manque dans ce qui existait déjà". Il avoue même espérer ne jamais être contraint à démarrer un nouveau projet, ce qui serait signe selon lui "d'un échec du monde à résoudre ses propres problèmes".
-
-Aujourd'hui, il souligne surtout l'importance du travail réalisé par Junio Hamano, qui a repris très tôt la maintenance du projet Git, et largement contribué à son succès durable.
+    <div class="flex justify-between gap-2">
+        <a href="/index.html"
+           class="inline-flex items-center border border-indigo-300 px-3 py-1.5 rounded-md text-indigo-500 hover:bg-indigo-50">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18">
+                </path>
+            </svg>
+            <span class="ml-1 font-bold text-lg">Back</span>
+        </a>
     </div>
+    <h1 class="text-3xl underline text-gray-700 text-center m-10">Je voulais juste régler mon problème" : il y a 20 ans, Linus
+        Torvalds créait Git</h1>
+
+    <p class="mb-4 mt-0 text-base font-light leading-8 ">
+        git origin
+
+        C’est en avril 2005, suite à un différend sur les licences du logiciel propriétaire BitKeeper (aujourd'hui
+        abandonné) utilisé par les développeurs du noyau Linux, que Linus Torvalds décide de créer Git.
+
+    </p>
+    <p class="mb-4 mt-0 text-base font-light leading-8 ">
+        À l'origine, BitKeeper, bien que performant, était mal accepté par la communauté open source en raison de sa
+        nature propriétaire, malgré une utilisation gratuite tolérée pour les projets libres.
+
+        Une tentative de reverse engineering par Andrew Tridgell, l'un des développeurs du noyau Linux, avait à l'époque
+        aggravé la situation, poussant Torvalds à anticiper une alternative open source plus viable.
+
+        "Je voulais quelque chose qui me convenait, sans me soucier vraiment des autres en premier lieu", confie-t-il.
+
+        En seulement dix jours, Torvalds développe une version suffisamment fonctionnelle pour être utilisée
+        immédiatement dans le développement du noyau Linux. Toutefois, cette rapidité apparente cache un travail
+        préparatoire de plusieurs mois de réflexion, débuté dès novembre ou décembre 2004.
+
+        Le 8 avril 2005, Linus Torvalds réalise le tout premier commit de ce nouvel outil de gestion de version baptisé
+        Git — un commit historique, réalisé avec Git lui-même !
+
+    </p>
+    <p class="mb-4 mt-0 text-base font-light leading-8 ">
+        Git, l'incompris devenu incontournable
+
+        Dès le départ, Git a marqué une rupture grâce à sa conception décentralisée, une véritable révolution pour
+        l'époque.
+
+        Deux principes clés ont guidé son développement : la rapidité, essentielle pour appliquer efficacement un grand
+        nombre de modifications, et l’utilisation généralisée d’un système de hachage (SHA-1), non pas tant pour la
+        sécurité, mais pour détecter toute corruption de fichiers, un problème que Torvalds avait déjà rencontré avec
+        BitKeeper.
+
+        Git a été conçu avec une philosophie semblable à celle d’Unix ("tout est un fichier, tout est un processus"),
+        rendant ses concepts fondamentaux simples et faciles à expliquer, malgré la complexité sous-jacente.
+
+        Bien que rapidement adopté par les développeurs du noyau Linux, Git n'a pas immédiatement conquis tout le monde.
+
+        Torvalds se souvient d’ailleurs des critiques initiales : "Beaucoup trouvaient Git difficile à prendre en main
+        et contre-intuitif". Cependant, au fil des ans, une véritable bascule s’est opérée.
+
+        Vers 2008, l'arrivée d'une nouvelle génération de développeurs, notamment dans la communauté web avec des
+        projets comme Ruby on Rails, a permis une adoption massive de Git et a modifié positivement la perception de
+        l'outil.
+        Un créateur fidèle à ses outils
+
+        Sur son usage personnel, Torvalds affirme être resté fidèle à ses habitudes minimalistes, n’utilisant encore
+        aujourd'hui que cinq commandes : git merge, git blame, git log, git commit et git pull.
+
+        Il ajoute qu'il continue à travailler exclusivement en ligne de commande, sans intégration d’éditeur
+        sophistiqué, fidèle à son éditeur favori depuis l'université, MicroEMACS. "Chaque fois que j’essaie un éditeur
+        moderne, je réalise que mes mains sont trop vieilles pour changer".
+    </p>
+    <p class="mb-4 mt-0 text-base font-light leading-8 ">
+        Torvalds indique n’avoir également jamais vraiment utilisé d’outils tiers ou d’intégrations avancées pour Git,
+        mis à part gitk, un visualiseur graphique intégré très tôt au projet.
+
+        Interrogé sur les évolutions souhaitées pour Git, Torvalds évoque principalement le souhait d’une meilleure
+        unification des systèmes de suivi des bugs et "issues", actuellement très fragmentés selon les plateformes.
+
+        Malgré quelques regrets mineurs sur des décisions initiales, comme l'utilisation de SHA-1 — qui a entraîné
+        beaucoup d'efforts supplémentaires lorsqu'il a fallu intégrer un support pour SHA-256 —, il reste globalement
+        satisfait des choix fondamentaux qui ont assuré la robustesse et l’efficacité de Git.
+
+        Lorsqu'on lui demande quel futur projet majeur pourrait suivre Linux et Git, Torvalds reste modeste et
+        pragmatique : "chaque projet que j’ai créé est né d’un manque dans ce qui existait déjà". Il avoue même espérer
+        ne jamais être contraint à démarrer un nouveau projet, ce qui serait signe selon lui "d'un échec du monde à
+        résoudre ses propres problèmes".
+
+        Aujourd'hui, il souligne surtout l'importance du travail réalisé par Junio Hamano, qui a repris très tôt la
+        maintenance du projet Git, et largement contribué à son succès durable.
+</div>
 
 </body>
 </html>
