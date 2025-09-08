@@ -1,0 +1,23 @@
+
+
+/* 📱 Mobile : styles par défaut (pas besoin de media query) */
+
+/* 📱➡️ Tablette portrait (iPad, ≥ 768px) */
+@media (min-width: 768px) {
+    /* tes styles ici */
+}
+
+/* 📱➡️ Tablette paysage / petits laptops (≥ 1024px) */
+@media (min-width: 1024px) {
+    /* tes styles ici */
+}
+
+/* 💻➡️ Ordinateurs moyens (≥ 1280px) */
+@media (min-width: 1280px) {
+    /* tes styles ici */
+}
+
+/* 🖥️ Grands écrans (≥ 1536px) */
+@media (min-width: 1536px) {
+    /* tes styles ici */
+}
