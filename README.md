@@ -1,6 +1,4 @@
-stephane
 
-Pièces jointes10:24 (il y a 7 minutes)
 
 À moi
 # Linus Torvalds — Fan Site
