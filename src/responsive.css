@@ -3,7 +3,7 @@
 /* 📱 Mobile : styles par défaut (pas besoin de media query) */
 
 /* 📱➡️ Tablette portrait (iPad, ≥ 768px) */
-@media (min-width: 768px) {
+@media (min-width: 768px) { 
     /* tes styles ici */
 }
 
